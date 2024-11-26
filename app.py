@@ -1,11 +1,24 @@
 import streamlit as st
 import pandas as pd
+import joblib
 from joblib import load
+import zipfile
+import os
+
+# กำหนดที่ตั้งไฟล์ zip และที่ตั้งปลายทาง
+zip_file = 'model_ex.zip'
+extract_to = 'git_large/'
+
+# แตกไฟล์ .zip
+with zipfile.ZipFile(zip_file, 'r') as zip_ref:
+    zip_ref.extractall(extract_to)
+    print(f"Files extracted to {extract_to}")
+
 
 # Load model
-knn_model = load(r"model_ex\knn_model.joblib")
-book = load(r"model_ex\book.joblib")
-book_pivot = load(r"model_ex\book_pivot.joblib")
+knn_model = load(os.path.join(extract_to, 'model_ex/knn_model.joblib'))
+book = load(os.path.join(extract_to, 'model_ex/book.joblib'))
+book_pivot = load(os.path.join(extract_to, 'model_ex/book_pivot.joblib'))
 
 # Set Streamlit page configuration
 st.set_page_config(
