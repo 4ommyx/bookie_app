@@ -2,8 +2,6 @@
 Welcome to **Bookie App**, your personal book recommender! 🎉  
 Explore new books tailored to your tastes. Select a book and the number of recommendations you'd like, then let us do the rest!  
 
----
-
 ### How does the Book Recommendation System work?  
 The **Bookie App** uses the **k-Nearest Neighbors (kNN)** algorithm to analyze relationships between books based on user ratings. Here's a quick summary :  
 
@@ -14,5 +12,6 @@ The **Bookie App** uses the **k-Nearest Neighbors (kNN)** algorithm to analyze r
 
 With **Bookie App**, finding your next favorite book has never been easier! 📖✨  
 
-
-link -> https://bookieapp-4ommyx.streamlit.app/
+## Additional Resources
+- **Documentation** : [Book Recommendation System with K-Nearest Neighbors](https://medium.com/@4ommyx/book-recommendation-system-with-k-nearest-neighbors-71eb4d7e5e22)  
+- **App Link** : [Bookie App](https://bookieapp-4ommyx.streamlit.app/)
